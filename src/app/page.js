@@ -1,5 +1,6 @@
 import Navigation from "@/components/navigation/navigation";
 import styles from "./page.module.css";
+import ImageGalleryName from "@/components/imageGalleryName/imageGalleryName";
 
 export default async function Page() {
   return (
@@ -9,12 +10,7 @@ export default async function Page() {
         <div className={styles.left}>
           <h2>Navigation</h2>
           <div className={styles.portfolioNames}>
-            <h2>PortfolioName</h2>
-            <h2>PortfolioName</h2>
-            <h2>PortfolioName</h2>
-            <h2>PortfolioName</h2>
-            <h2>PortfolioName</h2>
-            <h2>PortfolioName</h2>
+            <ImageGalleryName></ImageGalleryName>
           </div>
         </div>
         <div className={styles.right}>

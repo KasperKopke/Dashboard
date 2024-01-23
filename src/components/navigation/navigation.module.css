@@ -26,10 +26,13 @@
   background-color: white;
   display: none;
 }
+.nav h3 {
+  cursor: pointer;
+}
 
-/* .nav .ull.active {
+.nav .ull.active {
   display: flex;
-} */
+}
 .left.active {
   display: inline;
 }

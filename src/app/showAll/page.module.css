@@ -31,7 +31,7 @@
 .portfolioText {
   position: absolute;
   top: -40px;
-  left: 0;
+  left: 87px;
   color: white;
 }
 .pictureContainer {
@@ -43,6 +43,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-bottom: 50px;
 }
 .right .imgboks {
   width: 200px;

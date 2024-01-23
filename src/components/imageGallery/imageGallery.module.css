@@ -1,0 +1,9 @@
+.h2 {
+  color: white;
+  margin: 50px 0px 20px 0px;
+}
+.image {
+  margin: 5px;
+  object-fit: cover;
+  object-position: center;
+}
