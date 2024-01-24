@@ -1,20 +1,22 @@
-import fs from "fs";
+"use client";
+
 import Image from "next/image";
-import path from "path";
 import React from "react";
 
-const ImageGalleryName = () => {
-  const umbraFolder = path.join(process.cwd(), "public/umbra");
-
-  const folderNames = fs.readdirSync(umbraFolder);
+const ImageGalleryName = ({ authors }) => {
+  const getauthor = (e) => {
+    console.log(e.target.innerText);
+  };
 
   return (
     <div>
-      {folderNames.map((folderName) => (
-        <div key={folderName}>
-          <h2>{folderName}</h2>
-        </div>
-      ))}
+      <div>
+        {authors.map((author) => (
+          <div onClick={getauthor} key={author._id}>
+            <h2>{author.author}</h2>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

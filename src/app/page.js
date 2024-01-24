@@ -1,16 +1,16 @@
-import Navigation from "@/components/navigation/navigation";
 import styles from "./page.module.css";
+import { fetchAuthors } from "@/lib/data.service";
 import ImageGalleryName from "@/components/imageGalleryName/imageGalleryName";
-
 export default async function Page() {
+  let authors = await fetchAuthors();
+
   return (
     <div className={styles.page}>
-      <Navigation />
       <section className={styles.container}>
         <div className={styles.left}>
           <h2>Navigation</h2>
           <div className={styles.portfolioNames}>
-            <ImageGalleryName></ImageGalleryName>
+            <ImageGalleryName authors={authors}></ImageGalleryName>
           </div>
         </div>
         <div className={styles.right}>
